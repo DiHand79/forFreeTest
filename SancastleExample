@@ -39,16 +39,33 @@ let hprq2_3 = Cesium.Quaternion.fromHeadingPitchRoll(
             );
 //console.log(hprq2_1);
 
+let startLongitude = -77;
+let startLatitude = 37;
+let endLongitude;
+const endTime = Cesium.JulianDate.now();
+console.log("endTime: ", endTime);
+let startTime = Cesium.JulianDate.addSeconds(endTime, -20, new Cesium.JulianDate());
+console.log("startTime: ", startTime);
+const isoStart = Cesium.JulianDate.toIso8601(startTime);
+const isoEnd = Cesium.JulianDate.toIso8601(endTime);
+console.log(isoStart + isoEnd);
+
+//
+
+let modelUrl1 = "https://github.com/DiHand79/forFreeTest/blob/main/hierarhy-test.glb?raw=true";
+let modelUrl2 = "https://github.com/DiHand79/forFreeTest/blob/main/hierarhy-test-02.glb?raw=true";
+let modelUrl3 = "https://github.com/DiHand79/forFreeTest/blob/main/hierarhy-test-02.gltf?raw=true";
+
 var czml = [
   {
     id: "document",
     name: "CZML Model",
     version: "1.0",
-    clock: {
-      interval: "2015-01-01T00:00:00Z/2015-01-01T00:00:20Z", // 20 sec interval
-      currentTime: "2015-01-01T00:00:00Z", // time now = start anim
-      multiplier: 10,
-    },
+     clock: {
+        interval: isoStart + "/" + isoEnd, 
+        currentTime: isoStart, // time now = start anim
+        multiplier: 3,
+     },
   },
   {
     id: "model",
@@ -59,9 +76,36 @@ var czml = [
       cartesian: [40, 40, 70],
     },
     model: {
-      gltf: "https://github.com/DiHand79/forFreeTest/blob/main/hierarhy-test.glb?raw=true",
+      gltf: modelUrl3,
       runAnimations: false,
       nodeTransformations: {
+        // https://cesium.com/learn/cesiumjs/ref-doc/NodeTransformationProperty.html#rotation
+        "p_02_tower": {
+          rotation:{
+            epoch: isoStart,
+            unitQuaternion: [
+              0,
+              hprq1_1.w,hprq1_1.x*2, hprq1_1.y, hprq1_1.z, 
+              10,
+              hprq1_2.w,hprq1_2.x*2, hprq1_2.y, hprq1_2.z, 
+              20,
+              hprq1_3.w,hprq1_3.x*2, hprq1_3.y, hprq1_3.z, 
+            ],
+          },
+          scale: {
+            "epoch": isoStart,
+            "cartesian": [
+                0.0, 1.0, 1.0, 1.0,
+                10.0, 0.5, 1.0, 0.5,
+                20.0, 1.0, 1.0, 1.0,
+            ]
+          },
+           "translation" : {  //!!! WORK - BUT as mirror params -
+             // maybe after mesh convert to Y+ BUT nodes NO autoconvert 
+              epoch: isoStart,
+             "cartesian": [0,21.745-0.8,0] 
+           },
+        },
         p_02_nasell: {
           rotation: {
             epoch: "2015-01-01T00:00:00Z", // start animation
@@ -125,7 +169,8 @@ dataSourcePromise
   })
   .otherwise(function (error) {
     window.alert(error);
-  }); //Sandcastle_End
+  });
+  //Sandcastle_End
   
 // base extention info: 
 // https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_002_BasicGltfStructure.md
