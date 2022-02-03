@@ -126,3 +126,8 @@ dataSourcePromise
   .otherwise(function (error) {
     window.alert(error);
   }); //Sandcastle_End
+  
+// base extention info: 
+// https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_002_BasicGltfStructure.md
+// https://habr.com/ru/post/448220/
+// https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/Packet   
