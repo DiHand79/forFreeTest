@@ -1,0 +1,128 @@
+// https://sandcastle.cesium.com/
+//Sandcastle_Begin
+let hprq1_1 = Cesium.Quaternion.fromHeadingPitchRoll(
+              new Cesium.HeadingPitchRoll(
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0))
+            );
+let hprq1_2 = Cesium.Quaternion.fromHeadingPitchRoll(
+              new Cesium.HeadingPitchRoll(
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(30), 
+                Cesium.Math.toRadians(0))
+            );
+let hprq1_3 = Cesium.Quaternion.fromHeadingPitchRoll(
+              new Cesium.HeadingPitchRoll(
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0))
+            );
+
+let hprq2_1 = Cesium.Quaternion.fromHeadingPitchRoll(
+              new Cesium.HeadingPitchRoll(
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0))
+            );
+let hprq2_2 = Cesium.Quaternion.fromHeadingPitchRoll(
+              new Cesium.HeadingPitchRoll(
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(180))
+            );
+let hprq2_3 = Cesium.Quaternion.fromHeadingPitchRoll(
+              new Cesium.HeadingPitchRoll(
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(0), 
+                Cesium.Math.toRadians(360))
+            );
+//console.log(hprq2_1);
+
+var czml = [
+  {
+    id: "document",
+    name: "CZML Model",
+    version: "1.0",
+    clock: {
+      interval: "2015-01-01T00:00:00Z/2015-01-01T00:00:20Z", // 20 sec interval
+      currentTime: "2015-01-01T00:00:00Z", // time now = start anim
+      multiplier: 10,
+    },
+  },
+  {
+    id: "model",
+    position: {
+      cartographicDegrees: [-77, 37, 0],
+    },
+    viewFrom: {
+      cartesian: [40, 40, 70],
+    },
+    model: {
+      gltf: "https://github.com/DiHand79/forFreeTest/blob/main/hierarhy-test.glb?raw=true",
+      runAnimations: false,
+      nodeTransformations: {
+        p_02_nasell: {
+          rotation: {
+            epoch: "2015-01-01T00:00:00Z", // start animation
+            unitQuaternion: [
+              0,
+              hprq1_1.x, hprq1_1.y, hprq1_1.z, hprq1_1.w,
+              //-0.23381920887303329,
+              //-0.6909886782144156,
+              //-0.0938384854833712,
+              //0.6775378681547408,
+              10,
+              hprq1_2.x, hprq1_2.y, hprq1_2.z, hprq1_2.w,
+              //-0.4924076887347565,
+              //-0.6304934596091216,
+              //0.20657864059632378,
+              //0.563327551886459,
+              20,
+              hprq1_3.x, hprq1_3.y, hprq1_3.z, hprq1_3.w,
+              //-0.23381920887303329,
+              //-0.6909886782144156,
+              //-0.0938384854833712,
+              //0.6775378681547408,
+            ],
+          },
+        },
+        p_03_rotorBase: {
+          rotation: {
+            epoch: "2015-01-01T00:00:00Z", // start animation
+            //unitQuaternion: [
+            //  -0.2840422631464792,
+            //  -0.40211904424847345,
+            //  0.25175867757399086,
+            //  0.7063888981321548,
+            //],
+            unitQuaternion: [
+              0,
+              hprq2_1.x, hprq2_1.y, hprq2_1.z, hprq2_1.w,
+              10,
+              hprq2_2.x, hprq2_2.y, hprq2_2.z, hprq2_2.w,
+              20,
+              hprq2_3.x, hprq2_3.y, hprq2_3.z, hprq2_3.w,
+            ]
+          },
+        },
+      },
+    },
+  },
+];
+
+var viewer = new Cesium.Viewer("cesiumContainer", {
+  shouldAnimate: true,
+});
+
+var dataSourcePromise = viewer.dataSources.add(
+  Cesium.CzmlDataSource.load(czml)
+);
+
+dataSourcePromise
+  .then(function (dataSource) {
+    viewer.trackedEntity = dataSource.entities.getById("model");
+  })
+  .otherwise(function (error) {
+    window.alert(error);
+  }); //Sandcastle_End
