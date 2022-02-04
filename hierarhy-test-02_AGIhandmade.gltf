@@ -15,7 +15,12 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "floor_angle_.001"
+            "name" : "floor_angle_.001",
+            "extensions": {
+              "AGI_articulations": {
+                "articulationName": "Booster"
+              }
+            }
         },
         {
             "mesh" : 0,
