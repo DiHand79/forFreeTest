@@ -172,44 +172,7 @@
           "_NAME": "torus  test metadata obj hand added"
         }
       }
-    ],
-    "extensions": {
-      "EXT_structural_metadata": {
-        "schema": {
-          "classes": {
-            "prims": {
-              "name": "Box",
-              "description": "Box, descr",
-              "properties": {
-                "species": {
-                  "spec": "spec_test"
-                },
-                "age": {
-                  "age": 10
-                },
-                "height": {
-                  "height": 15
-                }
-              },
-              "values": [
-                {
-                  "name": "box",
-                  "value": 0
-                },
-                {
-                  "name": "sphere",
-                  "value": 1
-                },
-                {
-                  "name": "torus",
-                  "value": 2
-                }
-              ]
-            }
-          }
-        }
-      }
-    }
+    ]
   },
   "extras": {
     "name": "test extras obj hand added",
@@ -270,10 +233,21 @@
           },
           "content": {
             "name": "Content",
+            "uri": "string",
+            "group": 0,
+            "extras": {
+              "name": "string",
+              "id": "string",
+              "color": "string"
+            },
             "properties": {
               "name": "string",
               "id": "string",
               "color": "string"
+            },
+            "metadata": {
+              "name": "string",
+              "_NAME": "string"
             }
           }
         }
