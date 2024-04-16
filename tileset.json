@@ -41,7 +41,8 @@
         },
         "geometricError": 512,
         "content": {
-          "uri": "myBuilding_v02.b3dm"
+          "uri": "myBuilding_v02.b3dm",
+          "credits" : "<h2>test credits 1</h2>"
         },
         "extras": {
           "name": "myBuilding_v02",
@@ -73,7 +74,8 @@
         },
         "geometricError": 512,
         "content": {
-          "uri": "tile.b3dm"
+          "uri": "tile.b3dm",
+          "credits" : "<h2>test credits 2</h2>"
         },
         "extras": {
           "name": "tile",
@@ -110,6 +112,7 @@
       {
         "name": "box",
         "uri": "box.glb",
+        "credits" : "<h2>test credits 3</h2>",
         "group": 0,
         "extras": {
           "name": "box",
@@ -125,6 +128,7 @@
       {
         "name": "sphere",
         "uri": "sphere.glb",
+        "credits" : "<h2>test credits 4</h2>",
         "group": 1,
         "extras": {
           "name": "sphere",
@@ -140,6 +144,7 @@
       {
         "name": "torus",
         "uri": "torus.glb",
+        "credits" : "<h2>test credits 5</h2>",
         "group": 2,
         "extras": {
           "name": "torus",
