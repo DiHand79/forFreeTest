@@ -42,6 +42,20 @@
         "geometricError": 512,
         "content": {
           "uri": "myBuilding_v02.b3dm"
+        },
+        "extras": {
+          "name": "myBuilding_v02",
+          "id": "myBuilding_v02_id",
+          "color": "green"
+        },
+        "properties": {
+          "name": "myBuilding_v02",
+          "id": "myBuilding_v02_id",
+          "color": "green"
+        },
+        "metadata": {
+          "name": "myBuilding_v02. test metadata obj hand added",
+          "_NAME": "myBuilding_v02.  test metadata obj hand added"
         }
       },
       {
@@ -64,6 +78,20 @@
         "geometricError": 512,
         "content": {
           "uri": "tile.b3dm"
+        },
+        "extras": {
+          "name": "tile",
+          "id": "tile_id",
+          "color": "green"
+        },
+        "properties": {
+          "name": "tile",
+          "id": "tile_id",
+          "color": "green"
+        },
+        "metadata": {
+          "name": "tile test metadata obj hand added",
+          "_NAME": "tile test metadata obj hand added"
         }
       }
     ],
@@ -238,6 +266,14 @@
               "id": 1,
               "age": 100,
               "height": 10
+            }
+          },
+          "content": {
+            "name": "Content",
+            "properties": {
+              "name": "string",
+              "id": "string",
+              "color": "string"
             }
           }
         }
