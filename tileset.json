@@ -4,6 +4,8 @@
   },
   "geometricError": 4096,
   "root": {
+    "name": "name_root",
+    "description": "https://github.com/CesiumGS/3d-tiles-tools/tree/main?tab=readme-ov-file#pipeline",
     "boundingVolume": {
       "box": [
         7.841058107276862,
