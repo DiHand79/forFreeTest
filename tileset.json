@@ -85,6 +85,20 @@
       3979094.327746403,
       3241657.4343572576,
       1
+    ],
+    "contents": [
+      {
+        "uri": "box.glb",
+        "group": 0
+      },
+      {
+        "uri": "sphere.glb",
+        "group": 1
+      },
+      {
+        "uri": "torus.glb",
+        "group": 2
+      }
     ]
   },
   "extras": {
@@ -115,7 +129,13 @@
               "diameter": {
                 "diameter": "diameter_test"
               }
-            }
+            },
+            "values": [
+              {"name": "Unspecified", "value": 0},
+              {"name": "Oak", "value": 1},
+              {"name": "Pine", "value": 2},
+              {"name": "Maple", "value": 3}
+            ]
           },
           "building": {
             "name": "Building",
