@@ -96,8 +96,39 @@
     "_NAME": "test metadata obj hand added"
   },
   "extensions": {
-    "name": "test extensions obj hand added",
-    "_NAME": "test extensions obj hand added"
+    "EXT_structural_metadata": {
+      "schema": {
+        "classes": {
+          "tree": {
+            "name": "Tree",
+            "description": "Woody, perennial plant.",
+            "properties": {
+              "species": {
+                "spec": "spec_test"
+              },
+              "age": {
+                "age": 10
+              },
+              "height": {
+                "height": 15
+              },
+              "diameter": {
+                "diameter": "diameter_test"
+              }
+            }
+          },
+          "building": {
+            "name": "Building",
+            "description": "Home, sweety  home",
+            "properties": {
+              "id": 1,
+              "age": 100,
+              "height": 10
+            }
+          }
+        }
+      }
+    }
   },
   "extensionsUsed": [
     "3DTILES_batch_table_hierarchy"
