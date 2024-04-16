@@ -52,10 +52,6 @@
           "name": "myBuilding_v02",
           "id": "myBuilding_v02_id",
           "color": "green"
-        },
-        "metadata": {
-          "name": "myBuilding_v02. test metadata obj hand added",
-          "_NAME": "myBuilding_v02.  test metadata obj hand added"
         }
       },
       {
@@ -88,10 +84,6 @@
           "name": "tile",
           "id": "tile_id",
           "color": "green"
-        },
-        "metadata": {
-          "name": "tile test metadata obj hand added",
-          "_NAME": "tile test metadata obj hand added"
         }
       }
     ],
@@ -128,10 +120,6 @@
           "name": "box",
           "id": "box_id",
           "color": "red"
-        },
-        "metadata": {
-          "name": "box  test metadata obj hand added",
-          "_NAME": "box  test metadata obj hand added"
         }
       },
       {
@@ -147,10 +135,6 @@
           "name": "sphere",
           "id": "sphere_id",
           "color": "blue"
-        },
-        "metadata": {
-          "name": "sphere test metadata obj hand added",
-          "_NAME": "sphere  test metadata obj hand added"
         }
       },
       {
@@ -166,10 +150,6 @@
           "name": "torus",
           "id": "torus_id",
           "color": "green"
-        },
-        "metadata": {
-          "name": "torus test metadata obj hand added",
-          "_NAME": "torus  test metadata obj hand added"
         }
       }
     ]
@@ -177,10 +157,6 @@
   "extras": {
     "name": "test extras obj hand added",
     "_NAME": "test extras obj hand added"
-  },
-  "metadata": {
-    "name": "test metadata obj hand added",
-    "_NAME": "test metadata obj hand added"
   },
   "extensions": {
     "EXT_structural_metadata": {
@@ -244,10 +220,6 @@
               "name": "string",
               "id": "string",
               "color": "string"
-            },
-            "metadata": {
-              "name": "string",
-              "_NAME": "string"
             }
           }
         }
