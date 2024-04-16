@@ -2,6 +2,24 @@
   "asset": {
     "version": "1.1"
   },
+  "properties": {
+    "height": {
+      "minimum": 1,
+      "maximum": 150
+    },
+    "name": "box",
+    "uri": "box.glb",
+    "credits": "<h2>test credits 3</h2>",
+    "group": {
+      "minimum": 0,
+      "maximum": 10
+    },
+    "extras": {
+      "name": "box",
+      "id": "box_id",
+      "color": "red"
+    }
+  },
   "geometricError": 4096,
   "root": {
     "boundingVolume": {
@@ -42,17 +60,15 @@
         "geometricError": 512,
         "content": {
           "uri": "myBuilding_v02.b3dm",
-          "credits" : "<h2>test credits 1</h2>"
-        },
-        "extras": {
-          "name": "myBuilding_v02",
-          "id": "myBuilding_v02_id",
-          "color": "green"
-        },
-        "properties": {
-          "name": "myBuilding_v02",
-          "id": "myBuilding_v02_id",
-          "color": "green"
+          "credits": "<h2>test credits 1</h2>",
+          "properties": {
+            "height" : 10,
+            "name": "name from globap props",
+            "extras": {
+              "id": "id from global property with extras",
+              "_NAME": "_NAME from global property with extras"
+            }
+          }
         }
       },
       {
@@ -75,14 +91,17 @@
         "geometricError": 512,
         "content": {
           "uri": "tile.b3dm",
-          "credits" : "<h2>test credits 2</h2>"
+          "credits": "<h2>test credits 2</h2>",
+          "properties": {
+            "height" : 10,
+            "name": "name from globap props",
+            "extras": {
+              "id": "id from global property with extras",
+              "_NAME": "_NAME from global property with extras"
+            }
+          }
         },
         "extras": {
-          "name": "tile",
-          "id": "tile_id",
-          "color": "green"
-        },
-        "properties": {
           "name": "tile",
           "id": "tile_id",
           "color": "green"
@@ -112,49 +131,43 @@
       {
         "name": "box",
         "uri": "box.glb",
-        "credits" : "<h2>test credits 3</h2>",
         "group": 0,
-        "extras": {
-          "name": "box",
-          "id": "box_id",
-          "color": "red"
-        },
+        "credits": "<h2>test credits 3</h2>",
         "properties": {
-          "name": "box",
-          "id": "box_id",
-          "color": "red"
+          "height" : 10,
+          "name": "name from globap props",
+          "extras": {
+            "id": "id from global property with extras",
+            "_NAME": "_NAME from global property with extras"
+          }
         }
       },
       {
         "name": "sphere",
         "uri": "sphere.glb",
-        "credits" : "<h2>test credits 4</h2>",
         "group": 1,
-        "extras": {
-          "name": "sphere",
-          "id": "sphere_id",
-          "color": "blue"
-        },
+        "credits": "<h2>test credits 4</h2>",
         "properties": {
-          "name": "sphere",
-          "id": "sphere_id",
-          "color": "blue"
+          "height" : 10,
+          "name": "name from globap props",
+          "extras": {
+            "id": "id from global property with extras",
+            "_NAME": "_NAME from global property with extras"
+          }
         }
       },
       {
         "name": "torus",
         "uri": "torus.glb",
-        "credits" : "<h2>test credits 5</h2>",
         "group": 2,
-        "extras": {
-          "name": "torus",
-          "id": "torus_id",
-          "color": "green"
-        },
+        "credits": "<h2>test credits 5</h2>",
         "properties": {
-          "name": "torus",
-          "id": "torus_id",
-          "color": "green"
+          "height" : 10,
+          "name": "name from globap props",
+          "extras": {
+            "id": "id from global property with extras",
+            "_NAME": "_NAME from global property with extras"
+          }
         }
       }
     ]
@@ -167,51 +180,6 @@
     "EXT_structural_metadata": {
       "schema": {
         "classes": {
-          "tree": {
-            "name": "Tree",
-            "description": "Woody, perennial plant.",
-            "properties": {
-              "species": {
-                "spec": "spec_test"
-              },
-              "age": {
-                "age": 10
-              },
-              "height": {
-                "height": 15
-              },
-              "diameter": {
-                "diameter": "diameter_test"
-              }
-            },
-            "values": [
-              {
-                "name": "Unspecified",
-                "value": 0
-              },
-              {
-                "name": "Oak",
-                "value": 1
-              },
-              {
-                "name": "Pine",
-                "value": 2
-              },
-              {
-                "name": "Maple",
-                "value": 3
-              }
-            ]
-          },
-          "building": {
-            "name": "Building",
-            "description": "Home, sweety  home",
-            "properties": {
-              "id": 1,
-              "age": 100,
-              "height": 10
-            }
-          },
           "content": {
             "name": "Content",
             "uri": "string",
@@ -222,9 +190,14 @@
               "color": "string"
             },
             "properties": {
-              "name": "string",
-              "id": "string",
-              "color": "string"
+              "name": "Content",
+              "uri": "string",
+              "group": 0,
+              "extras": {
+                "name": "string",
+                "id": "string",
+                "color": "string"
+              }
             }
           }
         }
