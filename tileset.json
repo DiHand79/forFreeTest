@@ -88,18 +88,66 @@
     ],
     "contents": [
       {
+        "name": "box",
         "uri": "box.glb",
-        "group": 0
+        "group": 0,
+        "extras": {
+          "name": "box  test extras obj hand added",
+          "_NAME": "box  test extras obj hand added"
+        },
+        "metadata": {
+          "name": "box  test metadata obj hand added",
+          "_NAME": "box  test metadata obj hand added"
+        }
       },
       {
+        "name": "sphere",
         "uri": "sphere.glb",
         "group": 1
       },
       {
+        "name": "torus",
         "uri": "torus.glb",
         "group": 2
       }
-    ]
+    ],
+    "extensions": {
+      "EXT_structural_metadata": {
+        "schema": {
+          "classes": {
+            "prims": {
+              "name": "Box",
+              "description": "Box, descr",
+              "properties": {
+                "species": {
+                  "spec": "spec_test"
+                },
+                "age": {
+                  "age": 10
+                },
+                "height": {
+                  "height": 15
+                }
+              },
+              "values": [
+                {
+                  "name": "box",
+                  "value": 0
+                },
+                {
+                  "name": "sphere",
+                  "value": 1
+                },
+                {
+                  "name": "torus",
+                  "value": 2
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
   },
   "extras": {
     "name": "test extras obj hand added",
@@ -131,10 +179,22 @@
               }
             },
             "values": [
-              {"name": "Unspecified", "value": 0},
-              {"name": "Oak", "value": 1},
-              {"name": "Pine", "value": 2},
-              {"name": "Maple", "value": 3}
+              {
+                "name": "Unspecified",
+                "value": 0
+              },
+              {
+                "name": "Oak",
+                "value": 1
+              },
+              {
+                "name": "Pine",
+                "value": 2
+              },
+              {
+                "name": "Maple",
+                "value": 3
+              }
             ]
           },
           "building": {
