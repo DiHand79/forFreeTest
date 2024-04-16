@@ -92,8 +92,14 @@
         "uri": "box.glb",
         "group": 0,
         "extras": {
-          "name": "box  test extras obj hand added",
-          "_NAME": "box  test extras obj hand added"
+          "name": "box",
+          "id": "box_id",
+          "color": "red"
+        },
+        "properties": {
+          "name": "box",
+          "id": "box_id",
+          "color": "red"
         },
         "metadata": {
           "name": "box  test metadata obj hand added",
@@ -103,12 +109,40 @@
       {
         "name": "sphere",
         "uri": "sphere.glb",
-        "group": 1
+        "group": 1,
+        "extras": {
+          "name": "sphere",
+          "id": "sphere_id",
+          "color": "blue"
+        },
+        "properties": {
+          "name": "sphere",
+          "id": "sphere_id",
+          "color": "blue"
+        },
+        "metadata": {
+          "name": "sphere test metadata obj hand added",
+          "_NAME": "sphere  test metadata obj hand added"
+        }
       },
       {
         "name": "torus",
         "uri": "torus.glb",
-        "group": 2
+        "group": 2,
+        "extras": {
+          "name": "torus",
+          "id": "torus_id",
+          "color": "green"
+        },
+        "properties": {
+          "name": "torus",
+          "id": "torus_id",
+          "color": "green"
+        },
+        "metadata": {
+          "name": "torus test metadata obj hand added",
+          "_NAME": "torus  test metadata obj hand added"
+        }
       }
     ],
     "extensions": {
