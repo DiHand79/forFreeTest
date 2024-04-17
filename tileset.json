@@ -3,15 +3,15 @@
     "version": "1.1"
   },
   "properties": {
-    "height": 0,
-    "name": "box",
-    "uri": "box.glb",
-    "credits": "<h2>test credits 3</h2>",
-    "group": 0,
+    "height": "number",
+    "name": "string",
+    "uri": "string",
+    "credits": "string",
+    "group": "number",
     "extras": {
-      "name": "box",
-      "id": "box_id",
-      "color": "red"
+      "name": "string",
+      "id": "string",
+      "color": "string"
     }
   },
   "geometricError": 4096,
