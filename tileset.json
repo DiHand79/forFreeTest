@@ -222,6 +222,28 @@
                 "height" : 10
               }
             }
+          },
+          "contents": {
+            "name": "box",
+            "uri": "box.glb",
+            "group": 0,
+            "credits": "<h2>test credits 3</h2>",
+            "properties": {
+              "height" : 10,
+              "name": "name from globap props",
+              "extras": {
+                "id": "id from global property with extras",
+                "height" : 10,
+                "name": "box.glb",
+                "color": "green"
+              }
+            },
+            "extras": {
+              "id": "id from global property with extras",
+              "height" : 10,
+              "name": "box.glb",
+              "color": "green"
+            }
           }
         }
       }
