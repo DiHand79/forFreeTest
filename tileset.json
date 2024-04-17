@@ -56,11 +56,11 @@
           "uri": "myBuilding_v02.b3dm",
           "credits": "<h2>test credits 1</h2>",
           "properties": {
-            "height" : 10,
+            "height": 10,
             "name": "name from globap props",
             "extras": {
               "id": "id from global property with extras",
-              "height" : 10,
+              "height": 10,
               "name": "myBuilding_v02.b3dm",
               "color": "green"
             }
@@ -89,11 +89,11 @@
           "uri": "tile.b3dm",
           "credits": "<h2>test credits 2</h2>",
           "properties": {
-            "height" : 10,
+            "height": 10,
             "name": "name from globap props",
             "extras": {
               "id": "id from global property with extras",
-              "height" : 10,
+              "height": 10,
               "name": "tile.b3dm",
               "color": "green"
             }
@@ -101,7 +101,7 @@
         },
         "extras": {
           "id": "id from global property with extras",
-          "height" : 10,
+          "height": 10,
           "name": "tile.b3dm",
           "color": "green"
         }
@@ -133,18 +133,18 @@
         "group": 0,
         "credits": "<h2>test credits 3</h2>",
         "properties": {
-          "height" : 10,
+          "height": 10,
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "height" : 10,
+            "height": 10,
             "name": "box.glb",
             "color": "green"
           }
         },
         "extras": {
           "id": "id from global property with extras",
-          "height" : 10,
+          "height": 10,
           "name": "box.glb",
           "color": "green"
         }
@@ -155,18 +155,18 @@
         "group": 1,
         "credits": "<h2>test credits 4</h2>",
         "properties": {
-          "height" : 10,
+          "height": 10,
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "height" : 10,
+            "height": 10,
             "name": "sphere.glb",
             "color": "green"
           }
         },
         "extras": {
           "id": "id from global property with extras",
-          "height" : 10,
+          "height": 10,
           "name": "sphere.glb",
           "color": "green"
         }
@@ -177,18 +177,18 @@
         "group": 2,
         "credits": "<h2>test credits 5</h2>",
         "properties": {
-          "height" : 10,
+          "height": 10,
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "height" : 10,
+            "height": 10,
             "name": "torus.glb",
             "color": "green"
           }
         },
         "extras": {
           "id": "id from global property with extras",
-          "height" : 10,
+          "height": 10,
           "name": "torus.glb",
           "color": "green"
         }
@@ -200,26 +200,16 @@
       "schema": {
         "classes": {
           "content": {
-            "name": "Content",
-            "uri": "string",
-            "group": 0,
-            "extras": {
-              "name": "string",
-              "id": "string",
-              "color": "string",
-              "height" : 10
-            },
+            "uri": "tile.b3dm",
+            "credits": "<h2>test credits 2</h2>",
             "properties": {
-              "name": "Content",
-              "uri": "string",
-              "height": 0,
-              "credits": "<b>Credits from extension schema</b>",
-              "group": 0,
+              "height": 10,
+              "name": "name from globap props",
               "extras": {
-                "name": "string",
-                "id": "string",
-                "color": "string",
-                "height" : 10
+                "id": "id from global property with extras",
+                "height": 10,
+                "name": "tile.b3dm",
+                "color": "green"
               }
             }
           },
@@ -229,18 +219,18 @@
             "group": 0,
             "credits": "<h2>test credits 3</h2>",
             "properties": {
-              "height" : 10,
+              "height": 10,
               "name": "name from globap props",
               "extras": {
                 "id": "id from global property with extras",
-                "height" : 10,
+                "height": 10,
                 "name": "box.glb",
                 "color": "green"
               }
             },
             "extras": {
               "id": "id from global property with extras",
-              "height" : 10,
+              "height": 10,
               "name": "box.glb",
               "color": "green"
             }
