@@ -60,7 +60,6 @@
             "name": "name from globap props",
             "extras": {
               "id": "id from global property with extras",
-              "_NAME": "_NAME from global property with extras",
               "height" : 10,
               "name": "myBuilding_v02.b3dm",
               "color": "green"
@@ -94,16 +93,16 @@
             "name": "name from globap props",
             "extras": {
               "id": "id from global property with extras",
-              "_NAME": "_NAME from global property with extras",
               "height" : 10,
-              "uriname": "tile.b3dm",
+              "name": "tile.b3dm",
               "color": "green"
             }
           }
         },
         "extras": {
-          "name": "tile",
-          "id": "tile_id",
+          "id": "id from global property with extras",
+          "height" : 10,
+          "name": "tile.b3dm",
           "color": "green"
         }
       }
@@ -138,7 +137,6 @@
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "_NAME": "_NAME from global property with extras",
             "height" : 10,
             "name": "box.glb",
             "color": "green"
@@ -146,7 +144,6 @@
         },
         "extras": {
           "id": "id from global property with extras",
-          "_NAME": "_NAME from global property with extras",
           "height" : 10,
           "name": "box.glb",
           "color": "green"
@@ -162,7 +159,6 @@
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "_NAME": "_NAME from global property with extras",
             "height" : 10,
             "name": "sphere.glb",
             "color": "green"
@@ -170,7 +166,6 @@
         },
         "extras": {
           "id": "id from global property with extras",
-          "_NAME": "_NAME from global property with extras",
           "height" : 10,
           "name": "sphere.glb",
           "color": "green"
@@ -186,7 +181,6 @@
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "_NAME": "_NAME from global property with extras",
             "height" : 10,
             "name": "torus.glb",
             "color": "green"
@@ -194,17 +188,12 @@
         },
         "extras": {
           "id": "id from global property with extras",
-          "_NAME": "_NAME from global property with extras",
           "height" : 10,
           "name": "torus.glb",
           "color": "green"
         }
       }
     ]
-  },
-  "extras": {
-    "name": "test extras obj hand added",
-    "_NAME": "test extras obj hand added"
   },
   "extensions": {
     "EXT_structural_metadata": {
@@ -217,7 +206,8 @@
             "extras": {
               "name": "string",
               "id": "string",
-              "color": "string"
+              "color": "string",
+              "height" : 10
             },
             "properties": {
               "name": "Content",
@@ -228,7 +218,8 @@
               "extras": {
                 "name": "string",
                 "id": "string",
-                "color": "string"
+                "color": "string",
+                "height" : 10
               }
             }
           }
