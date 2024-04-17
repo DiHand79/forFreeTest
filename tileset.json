@@ -2,18 +2,6 @@
   "asset": {
     "version": "1.1"
   },
-  "properties": {
-    "height": "number",
-    "name": "string",
-    "uri": "string",
-    "credits": "string",
-    "group": "number",
-    "extras": {
-      "name": "string",
-      "id": "string",
-      "color": "string"
-    }
-  },
   "geometricError": 4096,
   "root": {
     "boundingVolume": {
@@ -65,6 +53,12 @@
               "color": "green"
             }
           }
+        },
+        "extras": {
+          "id": "id from global property with extras",
+          "height": 10,
+          "name": "myBuilding_v02.b3dm",
+          "color": "green"
         }
       },
       {
@@ -126,7 +120,7 @@
       3241657.4343572576,
       1
     ],
-    "contents": [
+    "content": [
       {
         "name": "box",
         "uri": "box.glb",
@@ -211,6 +205,12 @@
                 "name": "tile.b3dm",
                 "color": "green"
               }
+            },
+            "extras": {
+              "id": "id from global property with extras",
+              "height": 10,
+              "name": "myBuilding_v02.b3dm",
+              "color": "green"
             }
           },
           "contents": {
