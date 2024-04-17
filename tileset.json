@@ -143,6 +143,13 @@
             "name": "box.glb",
             "color": "green"
           }
+        },
+        "extras": {
+          "id": "id from global property with extras",
+          "_NAME": "_NAME from global property with extras",
+          "height" : 10,
+          "name": "box.glb",
+          "color": "green"
         }
       },
       {
@@ -160,6 +167,13 @@
             "name": "sphere.glb",
             "color": "green"
           }
+        },
+        "extras": {
+          "id": "id from global property with extras",
+          "_NAME": "_NAME from global property with extras",
+          "height" : 10,
+          "name": "sphere.glb",
+          "color": "green"
         }
       },
       {
@@ -177,6 +191,13 @@
             "name": "torus.glb",
             "color": "green"
           }
+        },
+        "extras": {
+          "id": "id from global property with extras",
+          "_NAME": "_NAME from global property with extras",
+          "height" : 10,
+          "name": "torus.glb",
+          "color": "green"
         }
       }
     ]
