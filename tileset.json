@@ -3,17 +3,11 @@
     "version": "1.1"
   },
   "properties": {
-    "height": {
-      "minimum": 1,
-      "maximum": 150
-    },
+    "height": 0,
     "name": "box",
     "uri": "box.glb",
     "credits": "<h2>test credits 3</h2>",
-    "group": {
-      "minimum": 0,
-      "maximum": 10
-    },
+    "group": 0,
     "extras": {
       "name": "box",
       "id": "box_id",
@@ -192,6 +186,8 @@
             "properties": {
               "name": "Content",
               "uri": "string",
+              "height": 0,
+              "credits": "<b>Credits from extension schema</b>",
               "group": 0,
               "extras": {
                 "name": "string",
