@@ -2,6 +2,18 @@
   "asset": {
     "version": "1.1"
   },
+  "properties": {
+    "height": "number",
+    "name": "string",
+    "uri": "string",
+    "credits": "string",
+    "group": "number",
+    "extras": {
+      "name": "string",
+      "id": "string",
+      "color": "string"
+    }
+  },
   "geometricError": 4096,
   "root": {
     "boundingVolume": {
@@ -48,7 +60,10 @@
             "name": "name from globap props",
             "extras": {
               "id": "id from global property with extras",
-              "_NAME": "_NAME from global property with extras"
+              "_NAME": "_NAME from global property with extras",
+              "height" : 10,
+              "name": "myBuilding_v02.b3dm",
+              "color": "green"
             }
           }
         }
@@ -79,7 +94,10 @@
             "name": "name from globap props",
             "extras": {
               "id": "id from global property with extras",
-              "_NAME": "_NAME from global property with extras"
+              "_NAME": "_NAME from global property with extras",
+              "height" : 10,
+              "uriname": "tile.b3dm",
+              "color": "green"
             }
           }
         },
@@ -120,7 +138,10 @@
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "_NAME": "_NAME from global property with extras"
+            "_NAME": "_NAME from global property with extras",
+            "height" : 10,
+            "name": "box.glb",
+            "color": "green"
           }
         }
       },
@@ -134,7 +155,10 @@
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "_NAME": "_NAME from global property with extras"
+            "_NAME": "_NAME from global property with extras",
+            "height" : 10,
+            "name": "sphere.glb",
+            "color": "green"
           }
         }
       },
@@ -148,7 +172,10 @@
           "name": "name from globap props",
           "extras": {
             "id": "id from global property with extras",
-            "_NAME": "_NAME from global property with extras"
+            "_NAME": "_NAME from global property with extras",
+            "height" : 10,
+            "name": "torus.glb",
+            "color": "green"
           }
         }
       }
